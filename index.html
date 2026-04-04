@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilal Arts | Resin Art Studio & Epoxy Table Manufacturing Institute</title>
+    <meta name="description"
+        content="Nilal Arts is a professional resin art studio and training institute specializing in custom epoxy resin tables, handcrafted furniture, and advanced resin art classes for beginners and professionals.">
+    <meta name="keywords"
+        content="Nilal Arts, resin art studio, epoxy resin tables, custom epoxy tables, epoxy river tables, resin dining tables, resin furniture makers, epoxy furniture design, resin art classes, advanced resin art training, resin table manufacturing, customized epoxy tables, resin art institute">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hero Carousel Styles */
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            z-index: -1;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden home-page">
+
+    <!--        NAVIGATION      -->
+    <nav class="fixed top-0 w-full z-50 bg-black transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif flex items-center justify-center whitespace-nowrap">
+                        <img src="https://placehold.co/150x50/transparent/white?text=NAIC" alt="Nilal Arts Logo"
+                            class="h-12 w-auto object-contain">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center justify-center gap-8 flex-1">
+
+                    <!-- Dropdown: Our Tables -->
+                    <div class="relative group">
+                        <button
+                            class="text-white group-hover:text-yellow-400 transition-colors duration-300 text-sm font-medium px-2 flex items-center gap-1 whitespace-nowrap">
+                            Our Tables <i
+                                class="fas fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 translate-y-2 transition-all duration-300 z-50 border border-gray-100">
+                            <a href="seathemes.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 first:rounded-t-lg whitespace-nowrap">Beach
+                                Themes</a>
+                            <a href="#gallery"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 whitespace-nowrap">Epoxy
+                                Resin</a>
+                            <a href="#gallery"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 whitespace-nowrap">Live
+                                Edge</a>
+                            <a href="#gallery"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 last:rounded-b-lg whitespace-nowrap">Glass
+                                Tables</a>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown: Academy -->
+                    <div class="relative group">
+                        <button
+                            class="text-white group-hover:text-yellow-400 transition-colors duration-300 text-sm font-medium px-2 flex items-center gap-1 whitespace-nowrap">
+                            The Academy <i
+                                class="fas fa-chevron-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 translate-y-2 transition-all duration-300 z-50 border border-gray-100">
+                            <a href="courses.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 first:rounded-t-lg whitespace-nowrap">All
+                                Courses</a>
+                            <a href="#academy"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 whitespace-nowrap">Epoxy
+                                Fundamentals</a>
+                            <a href="#academy"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 whitespace-nowrap">Master
+                                Table Builder</a>
+                            <a href="#academy"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-yellow-600 last:rounded-b-lg whitespace-nowrap">Weekend
+                                Workshops</a>
+                        </div>
+                    </div>
+                    <a href="rawmaterials.html"
+                        class="text-white hover:text-yellow-400 transition-colors duration-300 text-sm font-medium px-2 whitespace-nowrap">Raw
+                        Materials</a>
+                    <a href="about.html"
+                        class="text-white hover:text-yellow-400 transition-colors duration-300 text-sm font-medium px-2 whitespace-nowrap">About Us</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden lg:flex flex-shrink-0 justify-end gap-3 items-center cta-buttons">
+                    <a href="#academy"
+                        class="border-2 border-white text-white px-5 py-2 rounded-full font-medium hover:bg-white hover:text-gray-900 transition-all duration-300 whitespace-nowrap">Join
+                        Academy</a>
+                    <a href="#contact"
+                        class="bg-yellow-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-yellow-700 transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap">Request
+                        a Quote</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn"
+                        class="text-white hover:text-yellow-400 focus:outline-none p-2 whitespace-nowrap">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-20 shadow-xl py-6 px-6 flex flex-col gap-4 z-40 max-h-[80vh] overflow-y-auto">
+
+                <div class="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Our Tables</span>
+                    <a href="seathemes.html"
+                        class="text-gray-600 hover:text-yellow-600 font-medium whitespace-nowrap">Beach Themes</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-yellow-600 font-medium whitespace-nowrap">Epoxy &
+                        Live Edge</a>
+                </div>
+
+                <div class="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">The Academy</span>
+                    <a href="courses.html" class="text-gray-600 hover:text-yellow-600 font-medium whitespace-nowrap">All
+                        Courses</a>
+                </div>
+
+                <div class="flex flex-col gap-3 pl-4 border-l-2 border-gray-100">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Policies</span>
+                    <a href="terms.html" class="text-gray-600 hover:text-yellow-600 font-medium whitespace-nowrap">Terms
+                        & Conditions</a>
+                    <a href="policy.html"
+                        class="text-gray-600 hover:text-yellow-600 font-medium whitespace-nowrap">Privacy Policy</a>
+                    <a href="refund.html"
+                        class="text-gray-600 hover:text-yellow-600 font-medium whitespace-nowrap">Refund Policy</a>
+                </div>
+
+                <a href="rawmaterials.html"
+                    class="text-gray-900 hover:text-yellow-600 font-bold text-lg whitespace-nowrap">Raw
+                    Materials</a>
+                <a href="about.html"
+                    class="text-gray-900 hover:text-yellow-600 font-bold text-lg whitespace-nowrap">About </a>
+
+                <div class="flex flex-col gap-4 mt-4 pt-6 border-t border-gray-100 cta-buttons">
+                    <a href="#academy"
+                        class="border-2 border-gray-900 text-gray-900 px-5 py-3 rounded-full font-bold hover:bg-gray-900 hover:text-white transition-all duration-300 text-center uppercase tracking-wide text-sm whitespace-nowrap">Join
+                        Academy</a>
+                    <a href="#contact"
+                        class="bg-yellow-600 text-white px-6 py-3 rounded-full font-bold hover:bg-yellow-700 transition-all duration-300 shadow-md text-center uppercase tracking-wide text-sm whitespace-nowrap">Request
+                        a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════════════════════════ -->
+    <header id="hero"
+        class="relative min-h-screen flex items-start md:items-center lg:items-center justify-center overflow-hidden pb-16">
+        <!-- Carousel Slides -->
+        <div id="hero-carousel" class="absolute inset-0 z-0 w-full h-full">
+            <div class="hero-slide active">
+                <img src="https://nilalarts.com/wp-content/uploads/2024/07/workshop-4.jpg" alt="Workshop Background"
+                    class="w-full h-full object-cover">
+            </div>
+            <div class="hero-slide">
+                <img src="https://resineera.com/wp-content/uploads/2025/08/10-6.png" alt="Resin Art Table"
+                    class="w-full h-full object-cover">
+            </div>
+            <div class="hero-slide">
+                <img src="https://preview.redd.it/beach-epoxy-furniture-v0-gx8w1j60l2951.jpg?width=640&crop=smart&auto=webp&s=b253393caa8b1bf03dac0347694c3679f24854c6"
+                    alt="Craftsmanship" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto hero-content pt-24 md:pt-0 lg:pt-32">
+            <p class="text-yellow-400 text-sm font-semibold tracking-widest uppercase mb-4">✦ Premium Resin Tables •
+                Professional Training</p>
+            <h1
+                class="text-5xl md:text-7xl font-bold text-white mb-6 font-serif tracking-tight leading-tight lg:leading-snug">
+                Mastering the Art <br> <span class="text-yellow-400">of Resin Tables.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                Experience the beauty of custom resin furniture. Nilal Arts specializes in premium epoxy tables and
+                advanced resin art training for creators and entrepreneurs.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#gallery"
+                    class="w-full md:w-auto bg-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-yellow-700 transition-all duration-300 shadow-lg hover:shadow-yellow-500/30">Shop
+                    Tables</a>
+                <a href="#materials"
+                    class="w-full md:w-auto bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/30">Explore
+                    Materials</a>
+                <!-- Trigger Button -->
+                <button id="openCommunityModalBtn"
+                    class="w-full md:w-auto bg-gradient-to-r from-gray-900 to-gray-800 text-yellow-500 border border-yellow-500/50 px-8 py-4 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(234,179,8,0.3)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                    Join Our Community <i class="fas fa-sparkles text-xs"></i>
+                </button>
+            </div>
+            <!-- Press Bar -->
+            <div class="mt-12 text-gray-400 text-sm relative z-20">
+                <span class="mr-3 text-gray-500 font-medium uppercase tracking-wider text-xs">As Featured In:</span>
+                <span class="mx-2">Architectural Digest</span>·<span class="mx-2">Houzz</span>·<span class="mx-2">Design
+                    Milk</span>·<span class="mx-2">Elle Decor</span>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div
+            class="absolute bottom-2 md:bottom-6 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/60">
+            <span class="text-xs tracking-widest uppercase">Scroll to Explore</span>
+            <i class="fas fa-chevron-down animate-bounce"></i>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GLOBAL REACH — STATS (extends existing "Metrics" pattern)
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="metrics" class="py-20 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">Our Impact in
+                        Numbers</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">A Legacy Built in Every
+                        Table.</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">10+ years of sawdust, resin, and relentless craftsmanship
+                        — measured in the families who eat, work, and gather around our tables.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Stat 1 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center p-8 border-t-4 border-yellow-500">
+                        <span class="text-5xl font-bold font-serif text-yellow-600 mb-2">15+</span>
+                        <h3 class="text-xl font-bold mb-2">Countries Delivered</h3>
+                        <p class="text-gray-600 text-sm">USA, UK, UAE, Germany, India, Singapore, Australia & more</p>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center p-8 border-t-4 border-yellow-500">
+                        <span class="text-5xl font-bold font-serif text-yellow-600 mb-2">500+</span>
+                        <h3 class="text-xl font-bold mb-2">Custom Tables Crafted</h3>
+                        <p class="text-gray-600 text-sm">Each one built to order, never mass-produced</p>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center p-8 border-t-4 border-yellow-500">
+                        <span class="text-5xl font-bold font-serif text-yellow-600 mb-2">2,000+</span>
+                        <h3 class="text-xl font-bold mb-2">Students Certified</h3>
+                        <p class="text-gray-600 text-sm">From beginner hobbyists to professional furniture makers</p>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center p-8 border-t-4 border-yellow-500">
+                        <span class="text-5xl font-bold font-serif text-yellow-600 mb-2">14 Yrs</span>
+                        <h3 class="text-xl font-bold mb-2">Of Craftsmanship</h3>
+                        <p class="text-gray-600 text-sm">Founded 2009 — still family-owned and workshop-run</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             THE GALLERY — OUR PROJECTS (4-column grid)
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="gallery" class="py-20 px-6 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">Our Work</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">Tables That Tell a Story.
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">From raw slab to finished masterpiece — every piece in
+                        our gallery was built by hand, for a specific person, in a specific space.</p>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12">
+                    <button class="px-5 py-2 bg-gray-900 text-white rounded-full text-sm font-medium">All</button>
+                    <button
+                        class="px-5 py-2 bg-white text-gray-600 rounded-full text-sm font-medium border border-gray-200 hover:bg-gray-100 transition-colors">Solid
+                        Wood</button>
+                    <button
+                        class="px-5 py-2 bg-white text-gray-600 rounded-full text-sm font-medium border border-gray-200 hover:bg-gray-100 transition-colors">Epoxy
+                        Resin</button>
+                    <button
+                        class="px-5 py-2 bg-white text-gray-600 rounded-full text-sm font-medium border border-gray-200 hover:bg-gray-100 transition-colors">Live
+                        Edge</button>
+                    <button
+                        class="px-5 py-2 bg-white text-gray-600 rounded-full text-sm font-medium border border-gray-200 hover:bg-gray-100 transition-colors">Glass</button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Card 1 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://i.etsystatic.com/26242188/r/il/f8a2d2/4329515349/il_570xN.4329515349_92mu.jpg"
+                                alt="Walnut Estate Table" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Solid
+                                Wood</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Walnut Estate Dining Table</h3>
+                            <p class="text-gray-500 text-sm">American Black Walnut · 96" × 42" · Matte Oil Finish</p>
+                            <p class="text-gray-400 text-xs mt-2">Private Residence, Austin TX</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://i.etsystatic.com/26085079/r/il/59d85e/3338229923/il_570xN.3338229923_1cp2.jpg"
+                                alt="Blue River Table" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Epoxy
+                                Resin</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Blue River Table</h3>
+                            <p class="text-gray-500 text-sm">Live-edge oak slab with crystal-blue deep-pour epoxy river
+                                channel</p>
+                            <p class="text-gray-400 text-xs mt-2">Batch #24 — Student Showcase</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://www.bestbartopepoxy.com/cdn/shop/articles/best-epoxy-for-live-edge-tables-00r.jpg?v=1755624938"
+                                alt="Minimalist Oak" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Live
+                                Edge</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Minimalist Oak</h3>
+                            <p class="text-gray-500 text-sm">White Oak · Natural Live Edge · Hairpin Legs · Clear
+                                Lacquer</p>
+                            <p class="text-gray-400 text-xs mt-2">Sarah J. — Academy Alumna</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://farm7.static.flickr.com/6029/5974100825_2f178af794_z.jpg"
+                                alt="Forge Conference Table" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Glass</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Forge Conference Table</h3>
+                            <p class="text-gray-500 text-sm">Tempered glass top · Blackened steel base · 120" boardroom
+                                edition</p>
+                            <p class="text-gray-400 text-xs mt-2">Summit Tech Corp., Dubai</p>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://www.bestbartopepoxy.com/cdn/shop/articles/00-epoxy-tables-with-lore_98406884-4f13-49da-b768-efee38f92206.jpg?v=1768891986"
+                                alt="Midnight Galaxy Table" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Epoxy
+                                Resin</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Midnight Galaxy Table</h3>
+                            <p class="text-gray-500 text-sm">Deep black pigment with gold metallic flake epoxy · Dining
+                                height</p>
+                            <p class="text-gray-400 text-xs mt-2">Interior Designer Commission, London</p>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://i.pinimg.com/736x/60/ce/ba/60ceba471a1f6eb6f609794fb68b32f6.jpg"
+                                alt="Nordic Farmhouse Table" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Solid
+                                Wood</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Nordic Farmhouse Table</h3>
+                            <p class="text-gray-500 text-sm">European White Oak · 8-seater · Hand-rubbed beeswax finish
+                            </p>
+                            <p class="text-gray-400 text-xs mt-2">The Lindqvist Family, Stockholm</p>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://www.woodify.ca/wp-content/uploads/2022/04/1649941576006.jpg"
+                                alt="Teak River Console" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Live
+                                Edge</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Teak River Console</h3>
+                            <p class="text-gray-500 text-sm">Reclaimed teak slab · Turquoise resin fill · Brass hairpin
+                                legs</p>
+                            <p class="text-gray-400 text-xs mt-2">Boutique Hotel Lobby, Singapore</p>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div
+                        class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="https://m.media-amazon.com/images/I/71wFQYnV6dL._AC_UF894,1000_QL80_.jpg"
+                                alt="Studio Float Table" class="w-full h-full object-cover">
+                            <div class="gallery-overlay">
+                                <span class="text-white font-semibold text-sm">View Project →</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Glass</span>
+                            <h3 class="text-lg font-bold mt-1 mb-1">The Studio Float Table</h3>
+                            <p class="text-gray-500 text-sm">Frosted glass panel suspended over steel scaffold · Coffee
+                                table</p>
+                            <p class="text-gray-400 text-xs mt-2">Creative Agency, Berlin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             PRODUCTION PROCESS — HOW IT'S MADE
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="process" class="py-20 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">Our Process</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">Built by Hand. Finished to
+                        Last a Lifetime.</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Every Artisan Table Co. piece passes through four precise
+                        stages before it leaves our workshop floor.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Step 01 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 relative overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <span class="process-watermark">01</span>
+                        <div class="w-14 h-14 bg-yellow-50 rounded-xl flex items-center justify-center mb-5">
+                            <i class="fas fa-tree text-yellow-600 text-2xl"></i>
+                        </div>
+                        <span class="text-yellow-600 font-bold text-sm">01</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1 mb-3">Sourcing Raw Materials</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">We travel to certified sustainable forests and
+                            specialty lumber mills across North America and Europe. Every slab is hand-selected for
+                            grain figure, moisture content, and structural integrity.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">FSC
+                                Certified</span>
+                            <span
+                                class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">Sustainably
+                                Sourced</span>
+                        </div>
+                    </div>
+                    <!-- Step 02 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 relative overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <span class="process-watermark">02</span>
+                        <div class="w-14 h-14 bg-yellow-50 rounded-xl flex items-center justify-center mb-5">
+                            <i class="fas fa-tools text-yellow-600 text-2xl"></i>
+                        </div>
+                        <span class="text-yellow-600 font-bold text-sm">02</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1 mb-3">Precision Cutting & Milling</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Using industrial CNC routers and traditional
+                            hand tools in tandem, our craftsmen mill each slab to exact tolerances. Joinery is
+                            hand-fitted — no staples, no shortcuts. Every cut is measured three times.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">CNC
+                                Hybrid</span>
+                            <span
+                                class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">Hand-Tool
+                                Finish</span>
+                        </div>
+                    </div>
+                    <!-- Step 03 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 relative overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <span class="process-watermark">03</span>
+                        <div class="w-14 h-14 bg-yellow-50 rounded-xl flex items-center justify-center mb-5">
+                            <i class="fas fa-fill-drip text-yellow-600 text-2xl"></i>
+                        </div>
+                        <span class="text-yellow-600 font-bold text-sm">03</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1 mb-3">Epoxy Pouring & Curing</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Our UV-resistant crystal-clear epoxy is mixed
+                            in controlled batches and poured in multiple layers — up to 3 inches deep per pour for river
+                            tables. Custom color matching available. Cure time: 72 hours minimum.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">UV
+                                Resistant</span>
+                            <span
+                                class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">Bubble-Free</span>
+                        </div>
+                    </div>
+                    <!-- Step 04 -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 relative overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <span class="process-watermark">04</span>
+                        <div class="w-14 h-14 bg-yellow-50 rounded-xl flex items-center justify-center mb-5">
+                            <i class="fas fa-spray-can text-yellow-600 text-2xl"></i>
+                        </div>
+                        <span class="text-yellow-600 font-bold text-sm">04</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1 mb-3">Sanding, Finishing & Final Polish</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Starting at 80-grit and working up to 3000-grit
+                            wet sanding, each surface is hand-polished to a glass-like clarity. Options: Matte Oil,
+                            Satin Lacquer, or High-Gloss Epoxy Topcoat. White-glove delivery included.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">Hand-Polished</span>
+                            <span
+                                class="text-xs bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full font-medium">White-Glove
+                                Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             ACADEMY — COURSE DETAILS (2-column layout)
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="academy" class="py-20 px-6 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">The Woodworking
+                        Academy</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">Learn the Craft. Master the
+                        Art.</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">From your first resin pour to running your own furniture
+                        studio — our curriculum is built by working craftsmen, for serious learners.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- LEFT: Course Categories -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Course Categories</h3>
+
+                        <div
+                            class="flex flex-col md:flex-row items-start bg-white p-6 rounded-lg shadow-sm hover:bg-yellow-50 transition-colors duration-300 cursor-pointer group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center mb-4 md:mb-0 md:mr-6">
+                                <i class="fas fa-paint-brush text-xl"></i>
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-lg font-bold text-gray-900 group-hover:text-yellow-700 transition-colors">
+                                    Resin Art & River Tables</h3>
+                                <p class="text-gray-500 mt-1 text-sm">Master deep-pour epoxy, color theory, bubble
+                                    control, and the full process of building live-edge river tables from slab to final
+                                    finish.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col md:flex-row items-start bg-white p-6 rounded-lg shadow-sm hover:bg-yellow-50 transition-colors duration-300 cursor-pointer group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center mb-4 md:mb-0 md:mr-6">
+                                <i class="fas fa-ruler-combined text-xl"></i>
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-lg font-bold text-gray-900 group-hover:text-yellow-700 transition-colors">
+                                    Timber Selection & Joinery</h3>
+                                <p class="text-gray-500 mt-1 text-sm">Learn to identify wood species, read grain
+                                    direction, assess moisture content, and execute mortise-and-tenon, dovetail, and
+                                    spline joints.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col md:flex-row items-start bg-white p-6 rounded-lg shadow-sm hover:bg-yellow-50 transition-colors duration-300 cursor-pointer group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center mb-4 md:mb-0 md:mr-6">
+                                <i class="fas fa-cog text-xl"></i>
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-lg font-bold text-gray-900 group-hover:text-yellow-700 transition-colors">
+                                    CNC Machining & Design</h3>
+                                <p class="text-gray-500 mt-1 text-sm">Introduction to CAD/CAM software, CNC router
+                                    programming, and translating digital designs into physical furniture components.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col md:flex-row items-start bg-white p-6 rounded-lg shadow-sm hover:bg-yellow-50 transition-colors duration-300 cursor-pointer group">
+                            <div
+                                class="flex-shrink-0 w-14 h-14 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center mb-4 md:mb-0 md:mr-6">
+                                <i class="fas fa-store text-xl"></i>
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-lg font-bold text-gray-900 group-hover:text-yellow-700 transition-colors">
+                                    Workshop Business & Sales</h3>
+                                <p class="text-gray-500 mt-1 text-sm">Price your builds, photograph furniture
+                                    professionally, sell on your own platform, and turn your craft into a full-time
+                                    income stream.</p>
+                            </div>
+                        </div>
+
+                        <!-- Instructor Bio -->
+                        <div class="bg-gray-900 text-white p-6 rounded-lg mt-6">
+                            <div class="flex items-center mb-4">
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="James R. Caldwell"
+                                    class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-yellow-500">
+                                <div>
+                                    <h4 class="font-bold text-lg">S.Mani Kandan</h4>
+                                    <p class="text-yellow-400 text-sm">Head Instructor & Resin Expert</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 text-sm leading-relaxed">25 years in furniture making. Former
+                                workshop lead at a national furniture brand. Now runs Artisan Table Co. full-time and
+                                has personally trained over 2,000 students across 40+ countries. His YouTube channel has
+                                surpassed 90 million total views.</p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Course Cards -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Choose Your Path</h3>
+
+                        <!-- Card A -->
+                        <div
+                            class="bg-white rounded-xl shadow-lg border-2 border-yellow-500 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                            <div class="bg-yellow-500 text-white text-xs font-bold px-4 py-2 uppercase tracking-wider">⭐
+                                Most Popular</div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Master Table Builder — Full
+                                    Certification</h3>
+                                <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-clock text-yellow-500"></i> 16 Weeks</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-laptop text-yellow-500"></i> Hybrid · Weekend + Online</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-certificate text-yellow-500"></i> Certificate Included</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-user text-yellow-500"></i> 1-on-1 Mentorship</div>
+                                </div>
+                                <p class="text-gray-500 text-sm mb-4">Build 3 real tables: Solid Wood Dining, Epoxy
+                                    River, and Live Edge Console. Live projects with full instructor guidance.</p>
+                                <button
+                                    class="group flex items-center text-yellow-600 font-semibold hover:text-yellow-800 transition-colors duration-300">Enroll
+                                    Now <i
+                                        class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Card B -->
+                        <div
+                            class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                            <div class="bg-green-500 text-white text-xs font-bold px-4 py-2 uppercase tracking-wider">
+                                Beginner Friendly</div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Epoxy Resin Fundamentals — 4-Week
+                                    Intensive</h3>
+                                <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-clock text-green-500"></i> 4 Weeks</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-laptop text-green-500"></i> 100% Online · Self-Paced</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-video text-green-500"></i> 3hrs Video Content</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-users text-green-500"></i> Community Access</div>
+                                </div>
+                                <p class="text-gray-500 text-sm mb-4">Build 1 complete epoxy river table from scratch
+                                    with a downloadable PDF build guide and material kit list included.</p>
+                                <button
+                                    class="group flex items-center text-green-600 font-semibold hover:text-green-800 transition-colors duration-300">Start
+                                    Learning <i
+                                        class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Card C -->
+                        <div
+                            class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                            <div class="bg-gray-800 text-white text-xs font-bold px-4 py-2 uppercase tracking-wider">
+                                In-Person · Limited Seats</div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Weekend Resin Workshop — Hands-On</h3>
+                                <div class="grid grid-cols-2 gap-4 mb-4 text-sm">
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-calendar text-gray-500"></i> 2 Days (Sat–Sun)</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-map-marker-alt text-gray-500"></i> Portland, OR Studio</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-box text-gray-500"></i> All Materials Provided</div>
+                                    <div class="flex items-center gap-2 text-gray-600"><i
+                                            class="fas fa-utensils text-gray-500"></i> Lunch Both Days</div>
+                                </div>
+                                <p class="text-gray-500 text-sm mb-4">Max 8 students per session. Complete 1 small river
+                                    table to take home. Intimate, hands-on setting with full instructor attention.</p>
+                                <button
+                                    class="group flex items-center text-gray-700 font-semibold hover:text-gray-900 transition-colors duration-300">Book
+                                    a Seat <i
+                                        class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             STUDENT PORTFOLIO — HORIZONTAL SCROLL
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="portfolio" class="py-20 bg-gray-100 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 mb-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between">
+                    <div>
+                        <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">Student Showcase
+                        </p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif">Made by Our
+                            Students.<br>Worthy of Any Showroom.</h2>
+                    </div>
+                    <p class="text-gray-500 max-w-sm mt-4 md:mt-0 text-sm">Every piece below was built by a student who
+                        started exactly where you are.</p>
+                </div>
+            </div>
+
+            <!-- Horizontal Scroll Track -->
+            <div class="px-6">
+                <div class="scroll-track">
+                    <!-- Item 1 -->
+                    <div
+                        class="scroll-card w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-52 overflow-hidden">
+                            <img src="https://5.imimg.com/data5/ANDROID/Default/2022/1/WI/LK/EP/109413131/product-jpeg.jpg"
+                                alt="Blue River Table"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Epoxy River
+                                Table Intensive</span>
+                            <h3 class="text-lg font-bold text-gray-900 mt-1 mb-2">The Blue River Table</h3>
+                            <p class="text-gray-400 text-xs mb-3">Alex M. — Batch #24</p>
+                            <blockquote class="text-gray-600 text-sm italic border-l-4 border-yellow-400 pl-4">"I went
+                                from never using power tools to selling this table for $3,200. The course paid for
+                                itself ten times over."</blockquote>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                        class="scroll-card w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-52 overflow-hidden">
+                            <img src="https://sfd-craft.com/wp-content/uploads/2018/02/basic-tre-ii-oak-wood-dining-table_sfd-furniture-design5.webp"
+                                alt="Minimalist Oak"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Master Table
+                                Builder</span>
+                            <h3 class="text-lg font-bold text-gray-900 mt-1 mb-2">The Minimalist Oak Dining Table</h3>
+                            <p class="text-gray-400 text-xs mb-3">Sarah J. — Online Cohort #11</p>
+                            <blockquote class="text-gray-600 text-sm italic border-l-4 border-yellow-400 pl-4">"James's
+                                mentorship changed how I see wood — and what I believe I can build. I now take custom
+                                commissions from my garage studio."</blockquote>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                        class="scroll-card w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-52 overflow-hidden">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/RT/LS/RT/137033237/capture-186-500x500.jpg"
+                                alt="Midnight Console"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Resin Art
+                                Fundamentals</span>
+                            <h3 class="text-lg font-bold text-gray-900 mt-1 mb-2">The Midnight Console</h3>
+                            <p class="text-gray-400 text-xs mb-3">Daniel K. — Weekend Workshop</p>
+                            <blockquote class="text-gray-600 text-sm italic border-l-4 border-yellow-400 pl-4">"Two
+                                days, one table, and now I have a completely new career path. I could not believe what I
+                                made in a single weekend."</blockquote>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div
+                        class="scroll-card w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-52 overflow-hidden">
+                            <img src="https://cdn.shopify.com/s/files/1/0616/1711/1178/files/IMG_8085_600x400_d56b6224-7372-43df-ad6d-fad26b922727_600x600.jpg?v=1692982023"
+                                alt="Raw Edge Coffee Table"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Master Table
+                                Builder</span>
+                            <h3 class="text-lg font-bold text-gray-900 mt-1 mb-2">The Raw Edge Coffee Table</h3>
+                            <p class="text-gray-400 text-xs mb-3">Priya S. — Online Cohort #7</p>
+                            <blockquote class="text-gray-600 text-sm italic border-l-4 border-yellow-400 pl-4">"I built
+                                this table for my own living room and three neighbors immediately asked me to build one
+                                for them."</blockquote>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div
+                        class="scroll-card w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-52 overflow-hidden">
+                            <img src="https://preview.redd.it/made-another-studio-desk-but-in-walnut-this-time-with-a-v0-uumgof1o2ev81.jpg?width=640&crop=smart&auto=webp&s=0097030e9de8cfe89ab7efd161dded504b266742"
+                                alt="Steel Walnut Slab Desk"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">CNC + Joinery
+                                Mastery</span>
+                            <h3 class="text-lg font-bold text-gray-900 mt-1 mb-2">The Steel & Walnut Slab Desk</h3>
+                            <p class="text-gray-400 text-xs mb-3">Marcus T. — Batch #19</p>
+                            <blockquote class="text-gray-600 text-sm italic border-l-4 border-yellow-400 pl-4">"Learning
+                                CNC here opened the door to my own woodworking studio in Berlin. Worth every hour I
+                                invested."</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="max-w-7xl mx-auto px-6 mt-6 flex gap-3 justify-center">
+                <button onclick="document.querySelector('.scroll-track').scrollBy({left:-340,behavior:'smooth'})"
+                    class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-yellow-500 hover:text-yellow-600 transition-colors"><i
+                        class="fas fa-arrow-left text-sm"></i></button>
+                <button onclick="document.querySelector('.scroll-track').scrollBy({left:340,behavior:'smooth'})"
+                    class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-yellow-500 hover:text-yellow-600 transition-colors"><i
+                        class="fas fa-arrow-right text-sm"></i></button>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             SOCIAL MEDIA — FOLLOW OUR CRAFT (Instagram Grid)
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="social" class="py-20 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-10">
+                    <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">@nilal_arts_manish
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">Follow Our Craft.</h2>
+                    <p class="text-gray-600 max-w-xl mx-auto">Behind-the-scenes pours, time-lapses, student builds, and
+                        finished pieces. Join the community watching wood become art.</p>
+                </div>
+
+                <!-- Platform Stats -->
+                <div class="flex flex-wrap justify-center gap-8 mb-12 text-center social-stats-container">
+                    <div>
+                        <p class="text-2xl font-bold font-serif text-gray-900">345K</p>
+                        <p class="text-gray-500 text-sm flex items-center gap-1 justify-center"><i
+                                class="fab fa-instagram text-pink-500"></i> Followers</p>
+                    </div>
+                    <div class="w-px bg-gray-200"></div>
+                    <div>
+                        <p class="text-2xl font-bold font-serif text-gray-900">137K</p>
+                        <p class="text-gray-500 text-sm flex items-center gap-1 justify-center"><i
+                                class="fab fa-youtube text-red-500"></i> Subscribers · 67M+ Views</p>
+                    </div>
+                    <div class="w-px bg-gray-200"></div>
+                    <div>
+                        <p class="text-2xl font-bold font-serif text-gray-900">77K</p>
+                        <p class="text-gray-500 text-sm flex items-center gap-1 justify-center">
+                            <i class="fab fa-facebook-square text-blue-500"></i> Followers
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Instagram 3x3 Grid -->
+                <div class="grid grid-cols-3 gap-2 md:gap-3 max-w-3xl mx-auto mb-8">
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://masterplankuk.com/cdn/shop/files/preview_images/c4ca3d320c6c488599f3c3e13fed565d.thumbnail.0000000000.jpg?v=1741031218&width=1500"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">The pour begins. 72 hours to glory.</p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://preview.redd.it/i-cut-200-tons-of-wood-here-some-slabs-v0-vxqajnuyu1ef1.jpg?width=1080&crop=smart&auto=webp&s=6bcc0b4885ba554407a47fa3b534b60c3c527ea6"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">Every slab has a story. This one is 200 years
+                                old.</p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1754378270/nxlf6ttt3uvg6datuigl.jpg"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">Delivery day in Austin, TX. The client cried.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAL4fzaOP7Z8pbqxmAGjDuay13OZTJxxaKiw&s"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">Student Sarah just sold her first table for
+                                $2,800.</p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://moruxo.com/wp-content/uploads/2025/08/Untitled-design-2025-08-04T183950.494-1024x683.png"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">CNC + hand finishing. Two worlds. One table.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://i.etsystatic.com/20725267/r/il/7a9c24/2442193408/il_570xN.2442193408_8ndu.jpg"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">Blue river epoxy. Three inches deep. Zero
+                                bubbles.</p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://media.istockphoto.com/id/530997702/photo/carpenter-worker-sanding-wooden-table-with-sander.jpg?s=612x612&w=0&k=20&c=cFiBsdFPNLko4JVr4hB9cj_DGIemHvZ41Ne11xxUrYM="
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">80-grit to 3000-grit. Night and day
+                                difference.</p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://lh6.googleusercontent.com/proxy/WJS6Atj9dPULKN8yFMHE6A2j4Y535XipEBPL4HV7T2OeEDBXsmaLkc0N10woXgEq3iSqTMkLNzlnwlbFCw_E3MGdmBw3"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">Weekend workshop — all 8 students taking
+                                tables home.</p>
+                        </div>
+                    </div>
+                    <div class="insta-item aspect-square rounded-lg overflow-hidden">
+                        <img src="https://woodweb.com/knowledge_base_images/zp/drying_a_walnut_slab_3.jpg"
+                            alt="Instagram" class="w-full h-full object-cover">
+                        <div class="insta-overlay">
+                            <p class="text-white text-xs text-center px-2">This walnut slab was air-drying for 4 years.
+                                Worth it.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://www.instagram.com/nilal_arts_manish?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="inline-flex items-center gap-2 border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all duration-300"><i
+                            class="fab fa-instagram"></i> Follow @nilal_arts_manish on Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <!--  TRUSTED CLIENTS — LOGO MARQUEE  -->
+        <section id="clients" class="py-16 bg-gray-100 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 mb-10 text-center">
+                <p class="text-gray-400 text-xs font-semibold tracking-widest uppercase">Trusted By</p>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 font-serif mt-2">Our Tables Live in the World's
+                    Finest Spaces.</h2>
+            </div>
+            <div class="relative overflow-hidden">
+                <div class="marquee-inner">
+                    <!-- Set 1 -->
+                    <div class="flex items-center">
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Architectural
+                            Digest</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Houzz</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Design
+                            Milk</span>
+                        <span
+                            class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Remodelista</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Elle
+                            Decor</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Four Seasons
+                            Hotels</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">WeWork</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Marriott
+                            International</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Soho
+                            House</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Google HQ
+                            Interiors</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Microsoft
+                            Redmond Campus</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Dezeen</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Wallpaper
+                            Magazine</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Apartment
+                            Therapy</span>
+                    </div>
+                    <!-- Set 2 (duplicate for seamless loop) -->
+                    <div class="flex items-center">
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Architectural
+                            Digest</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Houzz</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Design
+                            Milk</span>
+                        <span
+                            class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Remodelista</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Elle
+                            Decor</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Four Seasons
+                            Hotels</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">WeWork</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Marriott
+                            International</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Soho
+                            House</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Google HQ
+                            Interiors</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Microsoft
+                            Redmond Campus</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Dezeen</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Wallpaper
+                            Magazine</span>
+                        <span class="flex-shrink-0 mx-10 text-gray-400 font-bold text-sm tracking-wider">Apartment
+                            Therapy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             STUDENT & CLIENT REVIEWS
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="testimonials" class="py-20 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">What They're Saying
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">5 Stars. Every Table. Every
+                        Student.</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-6 leading-relaxed">"After five years of daily use,
+                            our custom walnut dining table looks as stunning as the day it arrived. The craftsmanship is
+                            simply unmatched by anything we have seen at any price point."</blockquote>
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/rev1/100/100" alt="Margaret L."
+                                class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Margaret L.</h4>
+                                <p class="text-xs text-gray-500">Private Client · Austin, TX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-6 leading-relaxed">"The Epoxy Fundamentals course
+                            gave me the confidence to build my first river table. I sold it two weeks after completing
+                            the course. Best investment I have ever made in my own education."</blockquote>
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/rev2/100/100" alt="Alex M."
+                                class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Alex M.</h4>
+                                <p class="text-xs text-gray-500">Academy Student · Batch #24</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-6 leading-relaxed">"We ordered a boardroom conference
+                            table for sixteen. The Forge Table arrived perfectly finished and immediately elevated every
+                            single client meeting we host in that room."</blockquote>
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/rev3/100/100" alt="David K."
+                                class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">David K.</h4>
+                                <p class="text-xs text-gray-500">CEO, Summit Tech Corp. · Dubai</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-6 leading-relaxed">"James's mentorship did not just
+                            teach me joinery — it taught me to see the furniture business completely differently. I now
+                            run my own studio full-time in Berlin with a six-month waiting list."</blockquote>
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/rev4/100/100" alt="Marcus T."
+                                class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Marcus T.</h4>
+                                <p class="text-xs text-gray-500">Academy Alumna · Batch #19</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 5 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-6 leading-relaxed">"The live-edge console we
+                            commissioned for our hotel lobby has become the single most photographed object in the
+                            entire building. Guests ask about it at check-in every single day."</blockquote>
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/rev5/100/100" alt="Camille R."
+                                class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Camille R.</h4>
+                                <p class="text-xs text-gray-500">Interior Director · Boutique Hotel, Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 6 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-6 leading-relaxed">"I built this table for my own
+                            living room and three neighbors immediately asked me to build one for them. I never expected
+                            that. Now I have a proper side business running out of my garage."</blockquote>
+                        <div class="flex items-center">
+                            <img src="https://picsum.photos/seed/rev6/100/100" alt="Priya S."
+                                class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Priya S.</h4>
+                                <p class="text-xs text-gray-500">Academy Student · Online Cohort #7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             RAW MATERIALS MARKETPLACE
+        ═══════════════════════════════════════════════════════════════ -->
+        <section id="materials" class="py-20 px-6 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-600 text-xs font-semibold tracking-widest uppercase mb-2">The Materials Studio
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-serif">Source What the Pros Use.
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">We stock and sell the exact same materials used in our
+                        workshop. Grade-A hardwoods, UV-resistant epoxies, and professional finishing supplies.</p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12">
+                    <button class="px-5 py-2 bg-gray-900 text-white rounded-full text-sm font-medium">Wood
+                        Slabs</button>
+                    <button
+                        class="px-5 py-2 bg-white text-gray-600 rounded-full text-sm font-medium border border-gray-200 hover:bg-gray-100 transition-colors">Epoxy
+                        & Resins</button>
+                    <button
+                        class="px-5 py-2 bg-white text-gray-600 rounded-full text-sm font-medium border border-gray-200 hover:bg-gray-100 transition-colors">Tools
+                        & Accessories</button>
+                    <button
+                        class="px-5 py-2 bg-white text-gray-600 rounded-full text-sm font-medium border border-gray-200 hover:bg-gray-100 transition-colors">Finishing
+                        Supplies</button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Wood 1 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://picsum.photos/seed/mat1/400/300" alt="American Black Walnut"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Hardwood ·
+                                Grade A</span>
+                            <h3 class="text-lg font-bold mt-1 mb-2">American Black Walnut</h3>
+                            <p class="text-gray-500 text-sm mb-1">Air-dried 24 months · 8/4 thickness · Book-matched
+                                pairs available</p>
+                            <p class="text-gray-400 text-xs mb-3">Slabs from 36" to 120" length</p>
+                            <p class="text-gray-900 font-bold mb-4">From $18 per board foot</p>
+                        </div>
+                    </div>
+                    <!-- Wood 2 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://picsum.photos/seed/mat2/400/300" alt="White Oak"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Hardwood ·
+                                Grade A</span>
+                            <h3 class="text-lg font-bold mt-1 mb-2">White Oak</h3>
+                            <p class="text-gray-500 text-sm mb-1">Kiln-dried · Quarter-sawn available · Natural silver
+                                ray figure</p>
+                            <p class="text-gray-400 text-xs mb-3">Slabs from 30" to 96" length</p>
+                            <p class="text-gray-900 font-bold mb-4">From $12 per board foot</p>
+                        </div>
+                    </div>
+                    <!-- Wood 3 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://picsum.photos/seed/mat3/400/300" alt="Burmese Teak"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Exotic · FSC
+                                Certified</span>
+                            <h3 class="text-lg font-bold mt-1 mb-2">Burmese Teak</h3>
+                            <p class="text-gray-500 text-sm mb-1">Sustainably certified · Natural oil content · Weather
+                                & rot resistant</p>
+                            <p class="text-gray-400 text-xs mb-3">Slabs from 48" to 108" length</p>
+                            <p class="text-gray-900 font-bold mb-4">From $22 per board foot</p>
+                        </div>
+                    </div>
+                    <!-- Wood 4 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-44 overflow
+                        -hidden">
+                            <img src="https://picsum.photos/seed/mat4/400/300" alt="Hard Maple"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Domestic ·
+                                Premium</span>
+                            <h3 class="text-lg font-bold mt-1 mb-2">Hard Maple</h3>
+                            <p class="text-gray-500 text-sm mb-1">Tight grain · Ideal for CNC work · Excellent for
+                                painted or stained finishes</p>
+                            <p class="text-gray-400 text-xs mb-3">Slabs from 24" to 84" length</p>
+                            <p class="text-gray-900 font-bold mb-4">From $9 per board foot</p>
+
+                        </div>
+                    </div>
+                    <!-- Epoxy 1 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://picsum.photos/seed/mat5/400/300" alt="CrystalClear Pro Epoxy"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Deep Pour · UV
+                                Resistant</span>
+                            <h3 class="text-lg font-bold mt-1 mb-2">CrystalClear Pro Epoxy</h3>
+                            <p class="text-gray-500 text-sm mb-1">Up to 3" single pour · Zero yellowing guarantee · 72hr
+                                full cure · Food safe</p>
+                            <p class="text-gray-400 text-xs mb-3">1 Gallon · 2 Gallon · 5 Gallon Bulk</p>
+                            <p class="text-gray-900 font-bold mb-4">From $89 per kit</p>
+
+                        </div>
+                    </div>
+                    <!-- Epoxy 2 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://picsum.photos/seed/mat6/400/300" alt="ArtisanCoat Table Top Epoxy"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Table Top ·
+                                Self-Leveling</span>
+                            <h3 class="text-lg font-bold mt-1 mb-2">ArtisanCoat Table Top Epoxy</h3>
+                            <p class="text-gray-500 text-sm mb-1">Self-leveling formula · High-gloss finish · 1/4" per
+                                layer · 24hr cure time</p>
+                            <p class="text-gray-400 text-xs mb-3">Quart · Gallon · 2-Gallon Kit</p>
+                            <p class="text-gray-900 font-bold mb-4">From $49 per kit</p>
+
+                        </div>
+                    </div>
+                    <!-- Epoxy 3 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://picsum.photos/seed/mat7/400/300" alt="Metallic Pigment Set"
+                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col">
+                            <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">Pigment &
+                                Dye</span>
+                            <h3 class="text-lg font-bold mt-1 mb-2">Metallic & Pearl Pigment Set</h3>
+                            <p class="text-gray-500 text-sm mb-1">Gold, Silver, Copper, Bronze + 8 pearl shades ·
+                                Compatible with all epoxy brands</p>
+                            <p class="text-gray-400 text-xs mb-3">12-color set</p>
+                            <p class="text-gray-900 font-bold mb-4">$34.99 per set</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             NEWSLETTER BANNER
+        ═══════════════════════════════════════════════════════════════ -->
+        <section class="py-20 px-6 bg-gray-900 text-white">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold font-serif mb-4">Join the Inner Circle.</h2>
+                <p class="text-gray-400 mb-8 text-lg">Get build tips, new course launches, material restocks, and
+                    exclusive subscriber-only discounts — straight to your inbox.</p>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+                    <input type="email" placeholder="your@email.com"
+                        class="flex-1 px-5 py-3 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-sm">
+                    <button
+                        class="bg-yellow-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-700 transition-colors whitespace-nowrap">Join
+                        Now</button>
+                </div>
+                <p class="text-gray-500 text-xs mt-4">No spam. Unsubscribe anytime. We hate junk mail as much as you do.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-0 px-6 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+
+            <div class="lg:col-span-1">
+                <a href="index.html" class="text-xl font-bold font-serif mb-2 block">NILAL Arts</a>
+                <p class="text-yellow-500 text-xs tracking-widest mb-4">Tiruppur, <br> Tamilnadu-642126</p>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">Crafted with intention. Built to outlast us all.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=61563439282957" 
+                        class="text-gray-400 hover:text-white transition-colors"><i
+                            class="fab fa-facebook-square text-xl"></i></a>
+                    <a href="https://www.instagram.com/nilal_arts_manish"
+                        class="text-gray-400 hover:text-white transition-colors"><i
+                            class="fab fa-instagram text-xl"></i></a>
+                    <a href="https://www.youtube.com/@nilal_artisan"
+                        class="text-gray-400 hover:text-white transition-colors"><i
+                            class="fab fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold mb-5 uppercase tracking-wider">Company</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="about.html" class="hover:text-yellow-400 transition-colors">About Us</a></li>
+                    <li><a href="about.html#ourstory" class="hover:text-yellow-400 transition-colors">Our Story</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Virtual Workshop Tour</a></li>
+                    <li><a href="about.html#ourteam" class="hover:text-yellow-400 transition-colors">Our Team</a></li>
+                    <li><a href="courses.html#shortsTrack" class="hover:text-yellow-400 transition-colors">Reviews</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold mb-5 uppercase tracking-wider">Our Products</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="seathemes.html" class="hover:text-yellow-400 transition-colors">Beach Themes</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">3D Hand Molding</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Resin Gifts</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Radio Actives</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Memories</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold mb-5 uppercase tracking-wider">Academy</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="courses.html" class="hover:text-yellow-400 transition-colors">All Courses</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Epoxy Resin Fundamentals</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Master Table Builder</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Weekend Workshops</a></li>
+                    <li><a href="index.html#portfolio" class="hover:text-yellow-400 transition-colors">Student Works</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold mb-5 uppercase tracking-wider">Support</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-yellow-500"></i>Sardar
+                        St, Udumalapet, Tiruppur Dt, Tamil Nadu-642126, India</li>
+                    <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-yellow-500"></i>+91 94891 58550
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-yellow-500"></i>
+                        <a href="mailto:nilalarts@gmail.com" class="hover:text-yellow-400 transition-colors">nilalarts@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="space-y-3 text-gray-400 text-sm mt-5">
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Shipping & Delivery</a></li>
+                    <li><a href="refund.html" class="hover:text-yellow-400 transition-colors">Returns & Warranty</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors">Care & Maintenance Guide</a></li>
+                    <li><a href="rawmaterials.html#faq" class="hover:text-yellow-400 transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 py-6">
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 text-gray-500 text-sm">
+                <p>© 2025 Nilal Arts. All rights reserved.</p>
+                <div class="flex gap-5">
+                    <a href="policy.html" class="hover:text-yellow-400 transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-yellow-400 transition-colors">Terms & Conditions</a>
+                    <a href="refund.html" class="hover:text-yellow-400 transition-colors">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Social Floating Menu -->
+    <div class="fixed bottom-24 right-8 z-50 flex flex-col items-center gap-4">
+        <a href="https://instagram.com/nilal_arts_manish?igsh=NTc4MTIwNjQ2YQ==" target="_blank"
+            class="w-12 h-12 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+            <i class="fab fa-instagram text-xl"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=918940118861&text=" target="_blank"
+            class="w-12 h-12 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn"
+        class="fixed bottom-8 right-8 z-50 bg-yellow-600 text-white w-12 h-12 rounded-full shadow-lg translate-y-24 opacity-0 transition-all duration-300 hover:bg-yellow-700 flex items-center justify-center border border-white/20">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         COMMUNITY POPUP MODAL
+    ═══════════════════════════════════════════════════════════════ -->
+    <div id="communityModalOverlay"
+        class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+        <div id="communityModal"
+            class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transform scale-95 transition-transform duration-300">
+
+            <!-- Close Button -->
+            <button id="closeCommunityModalBtn"
+                class="absolute top-5 right-5 text-gray-400 hover:text-gray-900 transition-colors bg-gray-100 hover:bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center z-10">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="p-8 md:p-10">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-serif font-bold text-gray-900 mb-2">Join Our Community</h2>
+                    <p class="text-gray-500 text-sm">Connect with fellow artisans, get exclusive build tips, and access
+                        premium resources.</p>
+                </div>
+
+                <!-- Form Layout Using CSS Grid -->
+                <form id="communityForm" class="space-y-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">First Name <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email Address <span
+                                    class="text-red-500">*</span></label>
+                            <input type="email" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50">
+                        </div>
+                        <div class="md:col-span-2">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                            <input type="text" placeholder="City, State / Country"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Highest Qualification</label>
+                            <input type="text" placeholder="e.g. Bachelor of Arts, High School"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Primary Interest</label>
+                            <select required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50 text-gray-700 cursor-pointer">
+                                <option value="" disabled selected>Select an area of interest</option>
+                                <option value="Resin Art">Resin Art & Projects</option>
+                                <option value="Table Manufacturing">Table Manufacturing</option>
+                                <option value="Woodworking">General Woodworking</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Experience Level</label>
+                            <textarea rows="3" placeholder="Tell us briefly about your current skills or background..."
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-colors bg-gray-50 resize-none"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-gray-900 text-yellow-500 font-bold py-4 rounded-lg mt-6 hover:bg-yellow-600 hover:text-white transition-colors duration-300 shadow-lg flex justify-center items-center gap-2 group">
+                        Submit Application <i
+                            class="fas fa-paper-plane transform group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </form>
+
+                <!-- Success Message Animation (Hidden by default) -->
+                <div id="communitySuccessMsg" class="hidden flex-col items-center justify-center py-10 text-center">
+                    <div class="success-animation mb-6">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 mb-2">Welcome Aboard!</h3>
+                    <p class="text-gray-500">Your details have been successfully submitted. We'll be in touch soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            // 1. Hero Section Fade Up
+            gsap.from("#hero .hero-content > *", {
+                y: 60, opacity: 0, duration: 1.5,
+                stagger: 0.2, ease: "power4.out", delay: 0.5
+            });
+
+            // 2. Generic Reveal-on-Scroll for all sections
+            const sectionsToAnimate = [
+                "#metrics", "#gallery", "#process", "#academy",
+                "#portfolio", "#social", "#clients", "#testimonials",
+                "#materials", "footer"
+            ];
+
+            sectionsToAnimate.forEach((selector) => {
+                const section = document.querySelector(selector);
+                if (!section) return;
+                const targets = section.querySelectorAll(
+                    ".grid > div, .space-y-4 > div, .space-y-6 > div, h2, p, .max-w-7xl > div, .scroll-card"
+                );
+                gsap.from(targets, {
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    },
+                    y: 50, opacity: 0, duration: 0.8,
+                    stagger: 0.1, ease: "power3.out"
+                });
+            });
+
+            // 3. Stat counter animation
+            document.querySelectorAll('.stat-number').forEach(el => {
+                ScrollTrigger.create({
+                    trigger: el,
+                    start: "top 80%",
+                    once: true,
+                    onEnter: () => {
+                        const target = parseInt(el.dataset.target);
+                        gsap.to({ val: 0 }, {
+                            val: target, duration: 2, ease: "power2.out",
+                            onUpdate: function () { el.textContent = Math.round(this.targets()[0].val) + el.dataset.suffix; }
+                        });
+                    }
+                });
+            });
+
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // 4. Hero Carousel Logic
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+            if (slides.length > 0) {
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }, 5000);
+            }
+
+            // 5. Scroll To Top Logic
+            const scrollBtn = document.getElementById('scrollTopBtn');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollBtn.classList.remove('translate-y-24', 'opacity-0');
+                } else {
+                    scrollBtn.classList.add('translate-y-24', 'opacity-0');
+                }
+            });
+            scrollBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 6. Community Modal Logic
+            const openModalBtn = document.getElementById('openCommunityModalBtn');
+            const closeModalBtn = document.getElementById('closeCommunityModalBtn');
+            const modalOverlay = document.getElementById('communityModalOverlay');
+            const modalContent = document.getElementById('communityModal');
+            const communityForm = document.getElementById('communityForm');
+            const successMsg = document.getElementById('communitySuccessMsg');
+
+            function openModal() {
+                modalOverlay.classList.remove('hidden');
+                // Slight delay to trigger CSS transition properly
+                setTimeout(() => {
+                    modalOverlay.classList.remove('opacity-0');
+                    modalContent.classList.remove('scale-95');
+                    modalContent.classList.add('scale-100');
+                }, 10);
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+
+            function closeModal() {
+                modalOverlay.classList.add('opacity-0');
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+                setTimeout(() => {
+                    modalOverlay.classList.add('hidden');
+                    document.body.style.overflow = 'auto'; // Restore background scrolling
+
+                    // Reset the form state for future openings
+                    setTimeout(() => {
+                        communityForm.reset();
+                        communityForm.classList.remove('hidden');
+                        successMsg.classList.add('hidden');
+                        successMsg.classList.remove('flex');
+                    }, 300);
+                }, 300);
+            }
+
+            if (openModalBtn) openModalBtn.addEventListener('click', openModal);
+            if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+            if (modalOverlay) modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
+
+            // Handle form submission and success animation
+            if (communityForm) {
+                communityForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    communityForm.classList.add('hidden');
+                    successMsg.classList.remove('hidden');
+                    successMsg.classList.add('flex');
+                    // Optional: automatically close the modal after 3.5 seconds
+                    setTimeout(closeModal, 3500);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

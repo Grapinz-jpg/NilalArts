@@ -1,0 +1,492 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Client Marquee */
+.client-logos img {
+  filter: grayscale(100%) contrast(70%);
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.client-logos img:hover {
+  filter: grayscale(0%) contrast(100%);
+  opacity: 1;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* Horizontal Scroll Portfolio */
+.scroll-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 1rem;
+}
+
+.scroll-track::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Instagram Grid hover overlay */
+.insta-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.insta-item img {
+  transition: transform 0.4s ease;
+}
+
+.insta-item:hover img {
+  transform: scale(1.08);
+}
+
+.insta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.insta-item:hover .insta-overlay {
+  opacity: 1;
+}
+
+/* Gallery hover */
+.gallery-card img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1.5rem;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Process step number watermark */
+.process-watermark {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  font-size: 7rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.04);
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Gold accent color */
+.text-gold {
+  color: #d97706;
+}
+
+.bg-gold {
+  background-color: #d97706;
+}
+
+.border-gold {
+  border-color: #d97706;
+}
+
+.hover\:bg-gold-dark:hover {
+  background-color: #b45309;
+}
+
+/* Sticky legal strip */
+.legal-strip {
+  background: #111;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-inner:hover {
+  animation-play-state: paused;
+}
+
+/* --- Success Checkmark SVG Animation for Modal --- */
+.success-animation {
+  margin: 0 auto;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #d97706; /* Matches --gold variable */
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #d97706;
+  animation:
+    fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #d97706;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  stroke: #d97706;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px rgba(217, 119, 6, 0.1);
+  }
+}
+
+/* Mobile Responsive UI Fixes */
+@media (max-width: 768px) {
+  /* Header & Navigation */
+  nav.fixed.top-0.w-full.z-50 {
+    background-color: #000000 !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+  #mobile-menu-btn {
+    color: white !important;
+  }
+  nav .hidden.lg\:flex {
+    display: none !important;
+  }
+
+  /* Back Button */
+  .back-btn {
+    top: 15px !important;
+    left: 15px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+  .back-btn-text {
+    display: none !important;
+  }
+
+  /* Center Logo */
+  .absolute.top-8.left-1\/2 {
+    top: 20px !important;
+  }
+
+  /* Typography & Spacing */
+  h1,
+  .text-5xl,
+  .text-7xl {
+    font-size: 1.8rem !important;
+    line-height: 1.1 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  h2,
+  .text-4xl {
+    font-size: 1.8rem !important;
+    line-height: 1.3 !important;
+  }
+  p.text-lg,
+  p.text-xl {
+    font-size: 1rem !important;
+  }
+
+  .hero-content,
+  .relative.z-10.max-w-4xl,
+  .text-center.relative.z-10 {
+    margin-top: 0 !important;
+    text-align: center !important;
+  }
+  .hero-content p,
+  .relative.z-10.max-w-4xl p,
+  .text-center.relative.z-10 p {
+    text-align: center !important;
+    padding: 0 15px !important;
+  }
+
+  /* Universal Section Padding */
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Social Section Fix */
+  .social-stats-container {
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    justify-content: space-evenly !important;
+    width: 100% !important;
+  }
+  .social-stats-container > div p.text-2xl {
+    font-size: 1.25rem !important;
+  }
+  .social-stats-container > div p.text-sm {
+    font-size: 0.65rem !important;
+    white-space: nowrap;
+  }
+
+  /* Grid Layout (seathemes.html) */
+  #tables .grid,
+  .py-20 .grid.grid-cols-1.md\:grid-cols-2.lg\:grid-cols-4 {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .group.bg-gray-900 .h-64,
+  .group.relative.h-64 {
+    height: 120px !important;
+  }
+  .group.bg-gray-900 .p-6,
+  .group.relative .p-6 {
+    padding: 10px !important;
+  }
+  .group.bg-gray-900 h3,
+  .group.relative h3 {
+    font-size: 0.9rem !important;
+    margin-bottom: 5px !important;
+  }
+  .group.bg-gray-900 p.text-sm {
+    font-size: 0.7rem !important;
+    margin-bottom: 8px !important;
+  }
+  .group.bg-gray-900 .flex.gap-3 {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+  .group.bg-gray-900 .flex.gap-3 button {
+    width: 100% !important;
+    padding: 6px !important;
+    font-size: 0.7rem !important;
+  }
+}
+
+/* Hide Home link on the homepage */
+.home-page .nav-home-link {
+  display: none;
+}
+
+/* Hide CTA buttons on non-home pages */
+body:not(.home-page) .cta-buttons {
+  display: none;
+}
+
+/* ── MOBILE HERO GAP FIX (mobile only, desktop untouched) ── */
+@media (max-width: 1023px) {
+  /* Hero section: shrink height to visible area below fixed nav
+     and push it down so it starts below the 80px navbar.
+     Without this, the hero sits BEHIND the nav and flexbox
+     centers content in the full 100vh including the hidden area. */
+  section.relative.h-screen {
+    height: 80svh !important;
+    min-height: 0 !important;
+    margin-top: calc(80px + 10svh) !important;
+    margin-bottom: 10svh !important;
+    padding-top: 0 !important;
+  }
+
+  /* Fallback for browsers that don't support svh units */
+  @supports not (height: 100svh) {
+    section.relative.h-screen {
+      height: 80vh !important;
+      margin-top: calc(40px + 5vh) !important;
+      margin-bottom: 10vh !important;
+    }
+  }
+
+  /* seathemes.html — hero inner text wrapper */
+  section.relative.h-screen .text-center.relative.z-10 {
+    padding: 0 1.25rem !important;
+    margin-top: 0 !important;
+  }
+
+  /* seathemes.html — hero h1 */
+  section.relative.h-screen h1.font-serif {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* seathemes.html — hero paragraph */
+  section.relative.h-screen p.max-w-2xl {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* courses.html — hero inner text wrapper */
+  section.relative.h-screen .relative.z-10.max-w-4xl {
+    margin-top: 0 !important;
+    padding: 0 1.25rem !important;
+  }
+
+  /* courses.html — hero h1 */
+  section.relative.h-screen .relative.z-10.max-w-4xl h1 {
+    font-size: 2.1rem !important;
+    line-height: 1.15 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* courses.html — "Choose Your Journey" subtitle */
+  section.relative.h-screen .relative.z-10.max-w-4xl h2 {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* courses.html — hero paragraph */
+  section.relative.h-screen .relative.z-10.max-w-4xl p {
+    font-size: 0.85rem !important;
+    margin-bottom: 1.25rem !important;
+    padding: 0 !important;
+  }
+
+  /* courses.html — CTA buttons */
+  section.relative.h-screen .relative.z-10.max-w-4xl .flex a,
+  section.relative.h-screen .relative.z-10.max-w-4xl .flex button {
+    padding: 0.65rem 1rem !important;
+    font-size: 0.65rem !important;
+  }
+
+  /* Both pages — keep scroll indicator near bottom edge */
+  section.relative.h-screen .absolute.bottom-8 {
+    bottom: 1rem !important;
+  }
+}
+
+/* --- MOBILE HERO GAP FIX (PERFECTED TO MATCH COURSES) --- */
+@media (max-width: 768px) {
+  section.relative.h-screen.flex.items-center.justify-center.overflow-hidden {
+    height: auto !important;
+    min-height: 580px !important;
+    margin-top: 0 !important; /* ← KEY FIX: cancels the 1023px block's margin */
+    padding-top: 130px !important;
+    padding-bottom: 70px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+  #hero-carousel,
+  #hero-carousel .hero-slide,
+  #hero-carousel .hero-slide img {
+    position: absolute !important;
+    inset: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  section.relative.h-screen .text-center.relative.z-10 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.25rem !important;
+    padding: 0 20px !important;
+  }
+
+  section.relative.h-screen h1 {
+    font-size: 2.2rem !important;
+    margin-bottom: 5px !important;
+    line-height: 1.1 !important;
+  }
+
+  section.relative.h-screen p {
+    font-size: 0.9rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  section.relative.h-screen .absolute.bottom-8 {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin-top: 30px !important;
+    opacity: 0.8;
+  }
+}
